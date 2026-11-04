@@ -77,6 +77,9 @@ h1,.foot-title{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,9
 .num{font-family:var(--num);font-weight:400;font-variant-numeric:lining-nums;letter-spacing:.01em}
 .pieces .num,.price small .num,.line-info .num,.bar-text .num,.serves .num{font-size:1.12em}
 
+/* Stop iPhone double-tap zoom on controls (pinch zoom still works everywhere) */
+.stepper,.add-btn,.step-btn,.tab,.btn,.cart-bar-btn,.close,.copy-order{touch-action:manipulation}
+
 /* Cart bar */
 .cart-bar{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 14px calc(12px + env(safe-area-inset-bottom));pointer-events:none;animation:slideup .3s ease}
 .cart-bar[hidden]{display:none}
@@ -118,4 +121,4 @@ h1,.foot-title{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,9
 @media (max-width:420px){.tabs{gap:6px}.tab{font-size:1.05rem;padding:0 4px}.tab-dot{right:6px}}
 @media (max-width:360px){.serves{align-self:flex-start;margin:-4px 0 14px;padding:3px 14px;border-radius:999px;background:var(--peach);color:var(--rose-dark);font-size:.86rem}
 .buy{flex-wrap:wrap}.price small{max-width:none}}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior
