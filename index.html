@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Taste Me Oman — Snacks &amp; Sweets with Style</title>
+<meta name="description" content="Taste Me Oman — salads, snacks and desserts for every occasion. Choose your menu and send your order on WhatsApp.">
+<meta name="theme-color" content="#fdf6ee">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lora:wght@400;500&family=Pinyon+Script&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <img class="floral floral-tl" src="images/floral.png" alt="" aria-hidden="true">
+  <img class="floral floral-tr" src="images/floral.png" alt="" aria-hidden="true">
+  <img class="logo" src="images/logo.png" alt="Taste Me logo" width="559" height="500">
+  <p class="script">Let’s have a</p>
+  <h1>Snacks &amp; Sweets with Style</h1>
+  <div class="divider" aria-hidden="true"></div>
+  <p class="intro">At Taste me, every occasion is given its own unique signature. We care about the details, carefully select our ingredients, and create dishes that blend authenticity with creativity.</p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="#menu">View Menu</a>
+    <a class="btn btn-outline" data-ig target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" class="fill"/></svg>
+      @taste_me_oman
+    </a>
+  </div>
+</header>
+
+<main id="menu" class="menu">
+  <h2 class="menu-title">Our Menu</h2>
+  <div class="divider" aria-hidden="true"></div>
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Menu categories"></nav>
+  <p class="note">Each item is one order of the number of pieces shown. Choose how many orders you would like.</p>
+  <div class="grid" id="menuGrid"></div>
+</main>
+
+<footer class="footer">
+  <img class="floral floral-bl" src="images/floral.png" alt="" aria-hidden="true">
+  <img class="floral floral-br" src="images/floral.png" alt="" aria-hidden="true">
+  <img class="logo small" src="images/logo.png" alt="Taste Me" width="559" height="500" loading="lazy">
+  <p class="script">Let’s have a</p>
+  <p class="foot-title">Snacks &amp; Sweets with Style</p>
+  <div class="hero-actions">
+    <a class="btn btn-outline" data-ig target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" class="fill"/></svg>
+      @taste_me_oman
+    </a>
+    <a class="btn btn-outline" data-wa target="_blank" rel="noopener">WhatsApp <span class="num">+968 97111808</span></a>
+  </div>
+  <p class="copy">© Taste Me Oman</p>
+</footer>
+
+<div class="cart-bar" id="cartBar" hidden>
+  <button class="cart-bar-btn" id="openCart" aria-label="View your order">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11h10.2L20 7H6.2"/><circle cx="9" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/></svg>
+    <span class="bar-text"><span id="barCount"><span class="num">0</span> items</span> — <span id="barTotal" class="num">0.000 OMR</span></span>
+    <span class="bar-cta">View Order</span>
+  </button>
+</div>
+
+<div class="backdrop" id="sheetBackdrop" hidden>
+  <section class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <div class="sheet-head">
+      <h2 id="sheetTitle">Your Order</h2>
+      <button class="close" id="closeCart" aria-label="Close order">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <ul class="lines" id="cartLines"></ul>
+    <div class="sheet-foot">
+      <div class="total-row"><span>Total</span><strong id="sheetTotal" class="num">0.000 OMR</strong></div>
+      <a class="btn btn-primary confirm" id="confirmOrder" href="#" target="_blank" rel="noopener">CONFIRM ORDER</a>
+      <p class="hint">WhatsApp will open with your order already written. Just press Send.</p>
+      <button class="copy-order" id="copyOrder">WhatsApp did not open? Copy my order</button>
+    </div>
+  </section>
+</div>
+
+<script src="js/menu.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
